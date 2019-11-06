@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+    <title>
+        Survey Form
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Passenger Satisfaction Survey
+        </h1>
+        <p id="description"> Please take a few minutes to fill up this form and help us serve you better.
+
+        </p>
+    </header>
+    <main>
+        <div id="wrap">
+
+            <form id="survey-form" action="submit">
+                <p class="instruction">Please rate your experience between 1 and 5, 1 being least satisfied and 5 being most satisfied. </p>
+
+                <div class="survey">
+                    <fieldset style="border:none">
+                        <legend>
+                            Check-in and Boarding
+                        </legend>
+                        <input name="check-in" type="radio" value="1" id="1" required>
+                        <label for="1">1</label>
+
+                        <input name="check-in" type="radio" value="2" id="2">
+                        <label for="2">2</label>
+
+                        <input name="check-in" type="radio" value="3" id="3">
+                        <label for="3">3</label>
+                        <input name="check-in" type="radio" value="4" id="4">
+                        <label for="4">4</label>
+                        <input name="check-in" type="radio" value="5" id="5">
+                        <label for="5">5</label>
+
+                    </fieldset>
+                    <fieldset style="border:none">
+
+                        <legend>
+                            Flight Crew Hospitality
+                        </legend>
+                        <input name="FCH" type="radio" value="1" id="11" required>
+                        <label for="11">1</label>
+
+                        <input name="FCH" type="radio" value="2" id="12">
+                        <label for="12">2</label>
+
+                        <input name="FCH" type="radio" value="3" id="13">
+                        <label for="13">3</label>
+                        <input name="FCH" type="radio" value="4" id="14">
+                        <label for="14">4</label>
+                        <input name="FCH" type="radio" value="5" id="15">
+                        <label for="15">5</label>
+
+                    </fieldset>
+                    <fieldset style="border:none">
+                        <legend>
+                            In-Flight Meals
+                        </legend>
+                        <input name="meal" type="radio" value="1" id="21" required>
+                        <label for="21">1</label>
+
+                        <input name="meal" type="radio" value="2" id="22">
+                        <label for="22">2</label>
+
+                        <input name="meal" type="radio" value="3" id="23">
+                        <label for="3">3</label>
+                        <input name="meal" type="radio" value="4" id="24">
+                        <label for="4">4</label>
+                        <input name="meal" type="radio" value="5" id="25">
+                        <label for="25">5</label>
+
+                    </fieldset>
+                    <fieldset style="border:none">
+                        <legend>
+                            In-Flight Entertainment
+                        </legend>
+                        <input name="entertainment" type="radio" value="1" id="31" required>
+                        <label for="31">1</label>
+
+                        <input name="entertainment" type="radio" value="2" id="32">
+                        <label for="32">2</label>
+
+                        <input name="entertainment" type="radio" value="3" id="33">
+                        <label for="33">3</label>
+                        <input name="entertainment" type="radio" value="4" id="34">
+                        <label for="34">4</label>
+                        <input name="entertainment" type="radio" value="5" id="35">
+                        <label for="35">5</label>
+
+                    </fieldset>
+                    <fieldset style="border:none">
+                        <legend>
+                            Overall Experience
+                        </legend>
+                        <input name="all" type="radio" value="1" id="41" required>
+                        <label for="41">1</label>
+
+                        <input name="all" type="radio" value="2" id="42">
+                        <label for="42">2</label>
+
+                        <input name="all" type="radio" value="3" id="43">
+                        <label for="43">3</label>
+                        <input name="all" type="radio" value="4" id="44">
+                        <label for="44">4</label>
+                        <input name="all" type="radio" value="5" id="45">
+                        <label for="45">5</label>
+
+                    </fieldset>
+
+                    <div id="checkbox">
+                        <p style="font-weight:normal; margin-top: 50px; margin-bottom: 0px"> Have you enjoyed any of our value added services?</p>
+                        <input type="checkbox" name="preference" value="Lounge">
+                        <label for="Lounge">Lounge</label>
+                        <input type="checkbox" name="preference" value="Car-Rental">
+                        <label for="Car-Rental">Car Rental</label>
+                        <input type="checkbox" name="preference" value="Hotel-booking">
+                        <label for="Hotel-Booking">Hotel-Booking</label>
+                        <input type="checkbox" name="preference" value="Airport-Transfer">
+                        <label for="Airport-Transfer">Airport Transfer</label>
+
+                    </div>
+                    <div>
+                        <p style="font-weight:normal; margin-top: 50px; margin-bottom: 0px">Please select the cabin type you flew in. </p>
+                        <select id="dropdown" required>
+          <option class="option" value="null"></option>
+          <option class="option" value="Economy">Economy</option>
+          <option class="option" value="Premium-Economy">Premium Economy</option>
+          <option class="option" value="Business">Business</option>
+          <option class="option" value="First-Class">First Class</option>
+          </select>
+                    </div>
+
+                </div>
+
+                <div id="personaldetails">
+                    <fieldset>
+                        <legend>
+                            Personal Details
+                        </legend>
+                        <label id="name-label" for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Name(First, Last)" required>
+                        <br>
+                        <label id="email-label" for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <br>
+                        <label id="number-label" for="FFN">Frequent Flyer Number (if applicable)</label>
+                        <br>
+                        <input type="number" id="number" name="number" min="000001" max="999999" placeholder="000000">
+                    </fieldset>
+                </div>
+                <div id=comments>
+
+                    </label>
+                    <label for="textarea">Additional Comments</label>
+                    <br>
+                    <textarea id="textarea" name="textarea" rows="auto" cols="auto" placeholder="Please let us know how we can make your experience with us better.">
+      </textarea>
+                </div>
+
+                <button id="submit" type="submit"> Submit 
+        </button>
+
+            </form>
+
+        </div>
+    </main>
+    <footer id="footer>">
+        <p>Airline XYZ <br> Address: 123 Imaginary Street, City, State 12345, Country. <br> Contact: +1-123-456-789 <br> Email: customercare@xyz.com <br> Connect with us on: <br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"> </a>
+            <a href="#" class="fa fa-instagram"></a>
+        </p>
+    </footer>
+</body>
+
+
+</html>
